@@ -1,0 +1,121 @@
+.main{
+	display: flex;
+	margin: auto;
+	margin-top: 40px;
+	height: 400px;
+	width: 600px;
+	padding: 10px;
+	background-color: lightgrey;
+	/*border-radius: 5px;*/
+}
+
+.card {
+	/*position: relative;*/
+	display: flex;
+	flex-wrap: wrap;
+	/*flex-basis: 100px;*/
+	/*flex-direction: row;*/
+	flex-grow: 1;
+	/*align-items: center;*/
+	/*overflow-wrap: break-word;
+	word-wrap: break-word;*/
+	/*justify-content: center;*/
+	height: 300px;
+	/*margin-bottom: 10em;*/
+	background-color: Black;
+	/*border: 10px #333436;*/
+	border-radius: 5px 5px 0px 0px;
+}
+
+.inputCard{
+	width: 600px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	/*flex-wrap: wrap;
+	position: fixed;
+*/}
+
+#searchBox {
+	margin-top: 1em;
+	width: 95%;
+	height: 50%;
+	border-color: black;
+	border: 0px;
+	border-radius: 5px;
+	padding-left: 10px;
+	background-color: lightgrey;
+}
+
+#submit {
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+	margin-top: 2.5em;
+	margin-right: -50em;
+	padding-bottom: 5px;
+	border: 2px solid black;
+	border-radius: 50px;
+	background-color: lightgrey;
+}
+
+#list{
+	/*display: block;*/
+	/*position: absolute;*/
+	height: 100%;
+	width: 100%;
+	/*flex-grow: 3;*/
+	position: relative;
+}
+
+
+#remove{
+
+/*to hide the button initially*/
+	/*display: none; */
+
+	/*font-size: -0.5px;*/
+	/*position: fixed;*/
+	position: absolute;
+	margin-top: -0.15em;
+	margin-left: 430px;
+	margin-right: 0px;
+
+	border: 2px solid black;
+	border-radius: 50px;
+	background-color: lightgrey;
+
+}
+
+
+#footer{
+	/*display: flex;*/
+	/*position: sticky;*/
+	border: 5px;
+	width: 100%;
+	border-color: white;
+	border-radius: 0px 0px 5px 5px;
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+}
+
+ul li{
+	
+	list-style: none;
+	margin: 2px;
+	
+	background-color: lightgrey;
+	width: 90%;
+	
+
+	font-family: sans-serif;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+
+
+ul li:hover{
+	color: lightgrey;
+	background-color: black;
+}
