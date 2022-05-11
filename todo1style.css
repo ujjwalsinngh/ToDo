@@ -1,11 +1,13 @@
 .main{
-	display: flex;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
 	margin: auto;
 	margin-top: 40px;
 	height: 400px;
 	width: 600px;
 	padding: 10px;
 	background-color: lightgrey;
+	/*flex-grow: 2;*/
 	/*border-radius: 5px;*/
 }
 
@@ -13,17 +15,14 @@
 	/*position: relative;*/
 	display: flex;
 	flex-wrap: wrap;
-	/*flex-basis: 100px;*/
-	/*flex-direction: row;*/
-	flex-grow: 1;
-	/*align-items: center;*/
-	/*overflow-wrap: break-word;
-	word-wrap: break-word;*/
-	/*justify-content: center;*/
-	height: 300px;
+	/*flex-direction: row;
+	flex-grow: 1;*/	
+
+	/*overflow-wrap: break-word;*/
+	height: 270px;
 	/*margin-bottom: 10em;*/
 	background-color: Black;
-	/*border: 10px #333436;*/
+	border: 10px #333436;
 	border-radius: 5px 5px 0px 0px;
 }
 
@@ -31,13 +30,14 @@
 	width: 600px;
 	height: 100px;
 	display: flex;
-	justify-content: center;
-	/*flex-wrap: wrap;
-	position: fixed;
-*/}
+	/*justify-content: center;*/
+	/*flex-wrap: wrap;*/
+	/*position: fixed;*/
+}
 
 #searchBox {
 	margin-top: 1em;
+	margin-left: 0.8em;
 	width: 95%;
 	height: 50%;
 	border-color: black;
@@ -52,20 +52,23 @@
 	font-weight: bold;
 	position: absolute;
 	margin-top: 2.5em;
-	margin-right: -50em;
+	margin-left: 55em;
 	padding-bottom: 5px;
 	border: 2px solid black;
 	border-radius: 50px;
 	background-color: lightgrey;
+
+
 }
 
 #list{
-	/*display: block;*/
+	/*display: block;
 	/*position: absolute;*/
+	/*display: flex;*/
 	height: 100%;
 	width: 100%;
 	/*flex-grow: 3;*/
-	position: relative;
+	/*position: relative;*/
 }
 
 
@@ -76,14 +79,16 @@
 
 	/*font-size: -0.5px;*/
 	/*position: fixed;*/
-	position: absolute;
+
+	/*position: absolute;*/
+	/**/
 	margin-top: -0.15em;
-	margin-left: 430px;
+	margin-left: 300px;
 	margin-right: 0px;
 
 	border: 2px solid black;
 	border-radius: 50px;
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 
 }
 
@@ -98,6 +103,7 @@
 	font-family: sans-serif;
 	color: white;
 	background-color: black;
+	padding: 2px;
 }
 
 ul li{
@@ -108,6 +114,8 @@ ul li{
 	background-color: lightgrey;
 	width: 90%;
 	
+	/*overflow: hidden;*/
+	overflow-wrap: break-word;
 
 	font-family: sans-serif;
 	padding: 5px 5px 5px 5px;
