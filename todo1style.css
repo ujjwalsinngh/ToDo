@@ -89,7 +89,7 @@
 	position: absolute;
 	margin-top: 2.7em;
 	margin-left: 55em;
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 	border: 2px solid black;
 	border-radius: 50px;
 	background-color: white;
@@ -140,7 +140,7 @@ ul li:hover{
 
 }
 
-ul li .check{
+/*ul li .check{
 	display: block;
 	position: absolute;
 	border: 5px solid #AAAAAA;
@@ -152,7 +152,7 @@ ul li .check{
 	z-index: 5;
 	transition: border .25s linear;
 
-}
+}*/
 
 ul li:active{
 	color: lightgrey;
@@ -169,19 +169,23 @@ ul li:active{
 }
 
 #radio:hover{
-	background-color: lightgrey;
+	color: blue;
 }
 
-#radio:checked + label{
+#radio:not(:checked){
+	
+}
+
+/*#radio:checked + label{*/
 	/*position: absolute;*/
 	/*top: 14px;*/
 	/*left: 10px;*/
-	height: 30px;
+	/*height: 30px;
 	width: 30px;
-	background-color: black;
+	background-color: black;*/
 	/*border: 6px solid white;*/
 	/*border-radius: 50%;*/
-}
+/*}*/
 
 /*#eradio:checked ul li{
 	background-color: black;
@@ -259,4 +263,6 @@ ul li:active{
 	text-decoration: none;
 }
 */
+
+
 
