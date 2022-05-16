@@ -24,7 +24,8 @@ function submit(){
 	radioButton.setAttribute("type", "radio");                       /by using "setAttribute()" method /
 	radioButton.id = 'radio';                                        /by using function followed by property name/
 	radioButton.setAttribute("value", task);
-	radioButton.setAttribute("name", 'radioButton');
+	radioButton.setAttribute("name", manualId);                 /must be same for all radio buttons to ensure only one checked radio button at a time/
+																// / here name of radio buttons are different in order to achieve checking and unchecking on the basis of current checked radio button/  
 
 	var currLabel = document.createElement("label");
 	currLabel.id = "label"
@@ -47,11 +48,36 @@ function submit(){
 	/to append list Item to list/
 	list.appendChild(listItem);
 
-	/to check a radio button corresponding to clicked list item/
+	/to check & uncheck a radio button corresponding to clicked list item and update & reset it's style/
 	listItem.onclick = function() {
-		radioButton.checked = true;
-		var rad = radioButton.value;
-		rad.style.color: "black";
+		
+
+		var list = document.getElementById('taskList').children;
+		
+		for(var i=0; i<list.length; i++){
+
+			var item = list[i];
+			var rad = document.querySelectorAll('#radio');
+			var currRad = rad[i];
+
+			if(item.id == listItem.id){
+
+				currRad.checked = true;
+				currRad.parentElement.style.color = "white";
+				currRad.parentElement.style.backgroundColor = "black";
+				
+			}else if(item.id != listItem.id && currRad.checked==true){
+
+				currRad.checked = false; 
+				currRad.parentElement.style.color = "black";
+				currRad.parentElement.style.backgroundColor = "#ebedeb";
+
+			}else if(item.id != listItem.id && currRad.backgroundColor == 'black'){
+
+				currRad.parentElement.style.color = "black";
+				currRad.parentElement.style.backgroundColor = "#ebedeb";
+			}	
+		}
 	}
 
 
@@ -70,7 +96,9 @@ function submit(){
 	const elementsForLength = document.getElementById("taskList");
 	let len = elementsForLength.childNodes.length;
 	
+	/to update "tasks left" section in footer/
 	document.getElementById("length").innerHTML = len;
 
 }
+
 
