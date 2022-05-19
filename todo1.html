@@ -15,34 +15,45 @@
 		<div class="card">
 
 			<div class="header">
-				<input type="text" id="searchBox" name="newTask" placeholder="Type your todo list">
+
+				<input type="text" id="searchBox" name="newTask" placeholder="Type your todo list"><i class="fa-regular fa-note"></i>
+
 				<button id="submit" onclick="submit()"><i class="fa-solid fa-plus"></i></button>
+
 			</div>
 
 			<div id="lower-header">
-				<span id="check">//</span>
+
+				<span id="check"><i class="fa-regular fa-check-double"></i></span>
+
 				<span>Complete all tasks</span>
 				<span id="lower_header_text">Clear Completed</span>
+
 			</div>
 
-			<!-- <div id="middle">---------</div> -->
 
 			<div id="list">
+
 				<ul id="taskList"></ul>
+
 			</div>
 
 			<div class="footer">
 
 				<!-- used <span>(inline) instead of <div>(block) to make container inline -->
 				<span id="footer_stats">
+
 					<span id="length">0</span>
 					<span id="footer_stats_text">tasks left</span>
+
 				</span>
 
 				<span id="footer_filters">
+
 					<span id="all">All</span>
 					<span id="uncomplete">Uncomplete</span>
 					<span id="completed">Completed</span>
+					
 				</span>
 
 			</div>
